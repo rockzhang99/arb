@@ -80,7 +80,7 @@ class MarketDataRouter:
     def get_us_symbols_from_db(self) -> List[str]:
         """从数据库获取所有美股 ETF 标的（去重）"""
         import sqlite3
-        conn = sqlite3.connect(r'D:\Study\arbTest\database\arb_master.db')
+        conn = sqlite3.connect(r'D:\4Project\arb\database\arb_master.db')
         cursor = conn.cursor()
         cursor.execute('SELECT DISTINCT underlying_symbol FROM fund_basket_weights')
         rows = cursor.fetchall()
@@ -97,7 +97,7 @@ class MarketDataRouter:
     def get_cn_symbols_from_db(self) -> List[str]:
         """从数据库获取所有 A 股标的（去重）"""
         import sqlite3
-        conn = sqlite3.connect(r'D:\Study\arbTest\database\arb_master.db')
+        conn = sqlite3.connect(r'D:\4Project\arb\database\arb_master.db')
         cursor = conn.cursor()
         cursor.execute('SELECT DISTINCT underlying_symbol FROM fund_basket_weights')
         rows = cursor.fetchall()

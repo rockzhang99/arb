@@ -11,7 +11,7 @@ class ConfigManagerService:
     负责 CRUD 基金核心配置文件 lof_config.yaml
     """
     def __init__(self, project_root):
-        # 兼容 project_root 为 D:\Study\arbTest\ArbDashboard 或 D:\Study\arbTest
+        # 兼容 project_root 为 D:\4Project\arb\ArbDashboard 或 D:\4Project\arb
         # 统一从 arbcore/config/lof_config.yaml 加载配置
         base_dir = project_root if os.path.exists(os.path.join(project_root, "arbcore")) else os.path.dirname(project_root)
         self.config_path = os.path.normpath(os.path.join(base_dir, "arbcore", "config", "lof_config.yaml"))

@@ -14,7 +14,7 @@
 
 【首次使用前必读】
   从 GitHub 下载的 `database/arb_master_share.db` 需要重命名为 `arb_master.db`：
-    >> cd D:\Study\arbTest\database
+    >> cd D:\4Project\arb\database
     >> ren arb_master_share.db arb_master.db
 
 【启动看板】
@@ -68,16 +68,16 @@
 如果启动后遇到问题（如前端白屏、数据不更新等），可以手动重启前后端：
 
   1) 重启前端（前端页面不显示或样式异常时）：
-     >> cd D:\Study\arbTest\ArbDashboard\frontend
+     >> cd D:\4Project\arb\ArbDashboard\frontend
      >> npm run dev          # 开发模式（热重载）
      >> npm run build        # 构建生产版本（启动脚本会自动调用此命令）
 
   2) 重启后端（数据不更新或报错时）：
-     >> cd D:\Study\arbTest\ArbDashboard\backend
+     >> cd D:\4Project\arb\ArbDashboard\backend
      >> python main.py       # 启动后端服务（端口 8000）
 
   3) 一键重启（推荐）：
-     >> 双击 D:\Study\arbTest\ArbDashboard\start_dashboard.bat
+     >> 双击 D:\4Project\arb\ArbDashboard\start_dashboard.bat
      该脚本会自动执行 npm run build + python main.py + npm run dev
 
 * 注：修改前端代码后需要执行 npm run build 才能生效；修改后端 Python 代码后需要重启 python main.py 才能生效。

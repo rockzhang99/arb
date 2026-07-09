@@ -8,7 +8,7 @@ import sqlite3
 import pandas as pd
 
 # 共享数据库路径 - 可通过环境变量覆盖
-_SHARED_DB_PATH = os.environ.get('ARB_MASTER_DB', r"D:\Study\arbTest\database\arb_master.db")
+_SHARED_DB_PATH = os.environ.get('ARB_MASTER_DB', r"D:\4Project\arb\database\arb_master.db")
 
 
 def get_exchange_rate():

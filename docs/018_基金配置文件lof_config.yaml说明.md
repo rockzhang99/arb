@@ -20,7 +20,7 @@
 arbcore/config/lof_config.yaml
 ```
 
-绝对路径：`D:\Study\arbTest\arbcore\config\lof_config.yaml`
+绝对路径：`D:\4Project\arb\arbcore\config\lof_config.yaml`
 
 > 💡 跟它同目录的还有 `fund_categories.json`（基金分类）、`symbol_source_map.py`（数据源映射），它们是一家人。
 

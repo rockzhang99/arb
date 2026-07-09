@@ -17,7 +17,8 @@ timeout /t 2 /nobreak > nul
 :: Start Backend in a new window (visible so user can see errors)
 echo [1/3] Starting Backend (port 8000)...
 echo [DEBUG] Backend start time: %time%
-start "ArbNext Backend" cmd /k "cd /d D:\Study\arbTest\ArbDashboard\backend && D:\Study\arbTest\.venv\Scripts\python.exe main.py"
+set "PROJECT_ROOT=%~dp0.."
+start "ArbNext Backend" cmd /k "cd /d %PROJECT_ROOT%\ArbDashboard\backend && %PROJECT_ROOT%\.venv\Scripts\python.exe main.py"
 
 :: Health check retry loop (waits up to 30 seconds)
 echo Waiting for backend to start (checking every 2s, max 30s)...
@@ -47,7 +48,7 @@ echo [2/3] Backend health check PASSED at %time%
 :: Start Frontend in a new window
 echo [3/3] Starting Frontend (port 5173)...
 echo [DEBUG] Frontend start time: %time%
-start "ArbNext Frontend" cmd /k "cd /d D:\Study\arbTest\ArbDashboard\frontend && npm run dev"
+start "ArbNext Frontend" cmd /k "cd /d %PROJECT_ROOT%\ArbDashboard\frontend && npm run dev"
 
 echo.
 echo ========================================

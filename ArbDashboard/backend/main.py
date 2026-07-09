@@ -70,10 +70,10 @@ lof_is_running = False
 logger.info("[V10.0] 跳过 TQ 全局初始化（通达信待用户手动连接）")
 
 # Add project root and core/arbcore to path
-# [FIX] 使用 D:\Study\arbTest\arbcore 作为核心模块目录
+# [FIX] 使用 D:\4Project\arb\arbcore 作为核心模块目录
 backend_dir = os.path.dirname(os.path.abspath(__file__))
-# arbcore 在 ArbDashboard 的上级目录 (D:\Study\arbTest\arbcore)
-# 需要添加 D:\Study\arbTest 到 sys.path，这样 Python 才能找到 arbcore 包
+# arbcore 在 ArbDashboard 的上级目录 (D:\4Project\arb\arbcore)
+# 需要添加 D:\4Project\arb 到 sys.path，这样 Python 才能找到 arbcore 包
 arbcore_parent = os.path.normpath(os.path.join(backend_dir, "..", ".."))
 arbcore_dir = os.path.join(arbcore_parent, "arbcore")
 if os.path.exists(arbcore_dir):
@@ -127,7 +127,7 @@ except Exception as e:
     raise
 
 # 2. Initialize Database Manager FIRST
-# [V3.11] 使用统一数据库路径 D:\Study\arbTest\database\arb_master.db
+# [V3.11] 使用统一数据库路径 D:\4Project\arb\database\arb_master.db
 db = DatabaseManager(db_path=root_db_path)
 
 def _print_data_source_banners():

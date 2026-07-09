@@ -17,8 +17,8 @@ from datetime import datetime
 from typing import Optional, Dict, List, Any
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-DB_PATH = r'D:\Study\arbTest\database\arb_master.db'
-YAML_PATH = r'D:\Study\arbTest\arbcore\config\lof_config.yaml'
+DB_PATH = r'D:\4Project\arb\database\arb_master.db'
+YAML_PATH = r'D:\4Project\arb\arbcore\config\lof_config.yaml'
 START_DATE = '2026-04-08'
 GAP_DAYS_LIMIT = 5
 

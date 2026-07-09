@@ -10,7 +10,7 @@
 ### 1.1 一键启动（推荐）
 
 ```bash
-cd D:\Study\arbTest\ArbDashboard
+cd D:\4Project\arb\ArbDashboard
 start_dashboard.bat
 ```
 
@@ -18,11 +18,11 @@ start_dashboard.bat
 
 ```bash
 # 终端1：后端（端口 8000）
-cd D:\Study\arbTest\ArbDashboard\backend
-D:\Study\arbTest\.venv\Scripts\python.exe main.py
+cd D:\4Project\arb\ArbDashboard\backend
+D:\4Project\arb\.venv\Scripts\python.exe main.py
 
 # 终端2：前端（端口 5173）
-cd D:\Study\arbTest\ArbDashboard\frontend
+cd D:\4Project\arb\ArbDashboard\frontend
 npm run dev
 ```
 
@@ -260,11 +260,11 @@ taskkill /F /PID <进程ID>
 
 ### 5.2 后端日志时间线分析
 
-查看 `D:\Study\arbTest\ArbDashboard\logs\` 目录下的日志文件：
+查看 `D:\4Project\arb\ArbDashboard\logs\` 目录下的日志文件：
 
 ```bash
 # 查看最新的后端日志
-ls -lt D:\Study\arbTest\ArbDashboard\logs\*.log | head -1
+ls -lt D:\4Project\arb\ArbDashboard\logs\*.log | head -1
 ```
 
 关键时间点：
@@ -297,7 +297,7 @@ ls -lt D:\Study\arbTest\ArbDashboard\logs\*.log | head -1
 #### 模式 D：后端日志显示 `ECONNREFUSED` 连接 VPS 失败
 ```
 正常。VPS SSH 连接失败不影响本地功能。
-检查 VPS 配置文件 D:\Study\arbTest\arbcore\config\account_private.py
+检查 VPS 配置文件 D:\4Project\arb\arbcore\config\account_private.py
 ```
 
 ---
@@ -318,7 +318,7 @@ ls -lt D:\Study\arbTest\ArbDashboard\logs\*.log | head -1
 ### 步骤 3：检查后端日志
 ```bash
 # 查看最新日志的前 30 行
-head -30 D:\Study\arbTest\ArbDashboard\logs\*.log
+head -30 D:\4Project\arb\ArbDashboard\logs\*.log
 ```
 
 检查：

@@ -13,3 +13,8 @@ paramiko
 chinese-calendar
 openpyxl
 python-multipart
+selenium
+webdriver-manager
+beautifulsoup4
+exchange_calendars
+akshare
